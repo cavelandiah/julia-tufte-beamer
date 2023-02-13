@@ -4,8 +4,7 @@
     \framesubtitle{Re-analysis small RNA-seq data}
     \begin{table}[h!]
         \centering
-        \caption{Available SRA small-RNA/miRNA-seq for \textit{C.\ robusta}: $3$ experiments ($X$ libraries)}
-        \label{tab:experiments}
+        \caption{Available SRA small-RNA/miRNA-seq for \textit{C.\ robusta}: $3$ experiments ($X$ libraries)}\label{tab:experiments}
         \begin{tabular}{llp{1cm}}
             \toprule
             \textbf{Run} & \textbf{Experiment} & \textbf{Lib.} \\ \midrule
@@ -25,11 +24,23 @@
 \begin{frame}[t]
     \frametitle{From motifs to blocks}
     \framesubtitle{Discovering \textit{de-novo} miRNAs}
-    \begin{figure}[h!]
-        \centering
-        \includegraphics<1>[width=0.55\linewidth]{Figures/workflow} %
-        %\includegraphics<2>[width=\linewidth]{Figures/deNovoMethod2}\label{fig:synteny1497} %
-        %\includegraphics<3>[width=.7\linewidth]{Figures/denovopositive} %
-        %\includegraphics<4>[width=.7\linewidth]{Figures/denovopositive2}    
-    \end{figure}
+    \begin{columns}
+        \begin{column}{0.55\textwidth}
+            \begin{figure}[h!]
+                \centering
+                \includegraphics<1>[width=\linewidth]{Figures/workflow2} %
+                \includegraphics<2>[width=\linewidth]{Figures/workflow3}\label{fig:workflow} %
+                %\includegraphics<3>[width=.7\linewidth]{Figures/denovopositive} %
+                %\includegraphics<4>[width=.7\linewidth]{Figures/denovopositive2}    
+            \end{figure}
+        \end{column}
+        \begin{column}{0.44\textwidth}
+            Evaluation of consensus
+            \begin{itemize}
+                \item Base pairs > 18nt (Cite).
+                \item Number of loops = 1.
+                \item Position of 5' \& 3' matures.
+            \end{itemize}
+        \end{column}
+    \end{columns}
 \end{frame}

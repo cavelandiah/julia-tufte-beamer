@@ -1,4 +1,17 @@
-\begin{frame}[t,label=problem5]
+\begin{frame}[t]
+    \frametitle{Results: Canonical refining}
+    \framesubtitle{Discovering \textit{de-novo} miRNAs}
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=\linewidth]{Figures/results_workflowALL}\label{fig:workflow} %
+    \end{figure}
+    \begin{itemize}
+        \item Only $3.6$ \% potential candidates detected as \textit{canonical} miRNAs.
+        \item Expression of potential piwi-RNAs covers most of the candidates ($\sim 77.4$\%)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]
     \frametitle{\textit{De novo} miRNA annotation on \textit{C.\ robusta}}
     \framesubtitle{Re-analysis small RNA-seq data}
     \begin{figure}[h!]
@@ -7,10 +20,3 @@
         \includegraphics<2>[width=\linewidth]{Figures/denovopositive2}\label{fig:synteny1497}
     \end{figure}
 \end{frame}
-
-% SHOW the numbers for each step: <07-02-23, cavelandiah> %
-% -How many clusters resulted:  <07-02-23, cavelandiah> %
-% |- Overlapping clusters vs. Non-overlapping clusters
-% |- From those that are non-overlapping count numbers, including miRNAs
-% |- Based on the block mature classification, break down the numbers to: short, piwi-RNA, miRNA, long
-% |--- Compare canonical vs. non-canonical miRNAs 
