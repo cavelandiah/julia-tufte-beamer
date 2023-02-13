@@ -12,11 +12,25 @@
 \end{frame}
 
 \begin{frame}[t]
-    \frametitle{\textit{De novo} miRNA annotation on \textit{C.\ robusta}}
-    \framesubtitle{Re-analysis small RNA-seq data}
+    % Take the most expressed candidates from the 24 ones and show one comparison.
+    \frametitle{Disentangling miRNA annotation on \textit{C.\ robusta}}
+    Example: Chromosome $7$ cluster ($30$ miRNA loci over $3713$ nt)
     \begin{figure}[h!]
         \centering
-        \includegraphics<1>[width=\linewidth]{Figures/denovopositive} %
-        \includegraphics<2>[width=\linewidth]{Figures/denovopositive2}\label{fig:synteny1497}
+        \includegraphics<1>[width=\linewidth]{Figures/chr7_cluster} %
     \end{figure}
+    \begin{itemize}
+        \item $2$ covered by de-novo expression patterns.
+        \item $X$ by homology annotation using \texttt{miRNAture}.
+    \end{itemize}
 \end{frame}
+
+\begin{frame}[t]
+    \frametitle{Results: Iteration $1$}
+    \framesubtitle{Discovering \textit{de-novo} miRNAs}
+    \begin{itemize}
+        \item Starting point: $24$ CMs from \textit{C.\ robusta}.
+        \item First target specie: \textit{Ciona savignyi}.
+    \end{itemize}
+\end{frame}
+
