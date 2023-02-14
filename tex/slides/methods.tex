@@ -1,10 +1,10 @@
 \begin{frame}[t,label=problem5]
 %\begin{frame}{Algorithms}
-    \frametitle{\textit{De novo} miRNA annotation on \textit{Ciona robusta}}
+    \frametitle{Methods: \textit{De novo} miRNA annotation in \textit{Ciona robusta}}
     \framesubtitle{Re-analysis small RNA-seq data}
     \begin{table}[h!]
         \centering
-        \caption{Available SRA small-RNA/miRNA-seq for \textit{C.\ robusta}: $3$ experiments ($X$ libraries)}\label{tab:experiments}
+        \caption{Available SRA small-RNA/miRNA-seq for \textit{C.\ robusta}}\label{tab:experiments}
         \begin{tabular}{ll}
             \toprule
             \textbf{Run} & \textbf{Experiment} \\ \midrule
@@ -16,28 +16,32 @@
     \end{table}
     \begin{figure}[h!]
         \centering
-        \includegraphics<1>[width=0.7\linewidth]{Figures/solitarytunicate.png} %
-        \caption{\textit{C.\ robusta}. Source: $X$}
+        \includegraphics<1>[width=0.8\linewidth]{Figures/solitarytunicate.png} %
+        \caption{\textit{Ciona robusta}. Source: Lindsey Leigh, 2017}
     \end{figure}
 \end{frame}
 
 \begin{frame}[t]
-    \frametitle{From motifs to blocks}
+    \frametitle{Methods: reads $\rightarrow$ miRNAs}
     \framesubtitle{Discovering \textit{de-novo} miRNAs}
-    \begin{columns}
-        \begin{column}{0.55\textwidth}
             \begin{figure}[h!]
                 \centering
-                \includegraphics<1>[width=\linewidth]{Figures/workflow2} %
-                \includegraphics<2>[width=\linewidth]{Figures/workflow3}\label{fig:workflow} %
+                \includegraphics<1>[width=0.5\linewidth]{Figures/workflow2} %
             \end{figure}
+\end{frame}
+
+\begin{frame}[t]
+    \frametitle{Methods: reads $\rightarrow$ miRNAs}
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+            \includegraphics[width=\linewidth]{Figures/workflow3}\label{fig:workflow} %
         \end{column}
-        \begin{column}{0.44\textwidth}
-            Evaluation of consensus
+        \begin{column}{0.4\textwidth}
+            Consensus Evaluation
             \begin{itemize}
-                \item Base pairs > 18nt (Cite).
-                \item Number of loops = 1.
-                \item Position of 5' \& 3' matures.
+                \item Base pairs > $18$nt (Cite)
+                \item Number of stems = 1
+                \item Position of 5' \& 3' matures
             \end{itemize}
         \end{column}
     \end{columns}
