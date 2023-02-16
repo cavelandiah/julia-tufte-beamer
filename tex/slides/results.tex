@@ -3,11 +3,12 @@
     \framesubtitle{Discovering \textit{de-novo} miRNAs}
     \begin{figure}[h!]
         \centering
-        \includegraphics[width=\linewidth]{Figures/results_workflowALL}\label{fig:workflow} %
+        \includegraphics<1>[width=\linewidth]{Figures/results_workflowALL}\label{fig:workflow} %
+        \includegraphics<2>[width=0.55\linewidth]{Figures/isomir_example2}\label{fig:workflow} %
     \end{figure}
     \begin{itemize}
-        \item[-] Only $3.6$\% candidates detected as \textit{canonical} miRNAs.
-        \item[-] Most of candidates detected as piwi-RNAs ($\sim 77.4$\%)
+        \item<1>[-] Only $3.6$\% candidates detected as \textit{canonical} miRNAs.
+        \item<2>[-] Mostly short candidates: maturation by-products?/isomirs? ($\sim 77.4$\%)
     \end{itemize}
 \end{frame}
 
@@ -45,10 +46,11 @@
         \centering
         \includegraphics<1>[width=\linewidth]{Figures/evaluation_annotation_mirbase1} %
         \includegraphics<2>[width=\linewidth]{Figures/evaluation_annotation_mirbase2} %
+        \includegraphics<3>[width=\linewidth]{Figures/mor_example} %
     \end{figure}
      \begin{itemize}[<+->]
          \item Canonical miRNAs represent $\sim21$\% of cluster.
-         \item Reasons: Position of mature sequences, loop regions, structural constrains.
+         \item Reasons: Position of mature sequences on loop regions, structural constrains, miRNA-offset.
      \end{itemize}
 \end{frame}
 
